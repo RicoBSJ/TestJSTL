@@ -7,10 +7,8 @@
 <title>Test</title>
 </head>
 <body>
-	<c:out value="test" />
-	<%-- Affiche test --%>
-	<c:out value="${ 'a' < 'b' }" />
-	<%-- Affiche true --%>
+	<c:out value="test" /> <%-- Affiche test --%>
+<%-- 	<c:out value="${ 'a' < 'b' }" /> Affiche true --%>
 	<%-- Cette balise affichera le mot 'test' si le bean n'existe pas : --%>
 	<c:out value="${ bean }">
 			test
