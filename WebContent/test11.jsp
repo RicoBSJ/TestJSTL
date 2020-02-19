@@ -7,7 +7,7 @@
 		<title>Insert title here</title>
 	</head>
 	<body>
-		<%-- Forwarding avec l'action standard JSP --%>
-		<jsp:forward page="/test03.jsp" />
+		<%-- Copie le contenu du fichier ciblé dans la page actuelle --%>
+		<c:import url="test00.jsp" />
 	</body>
 </html>

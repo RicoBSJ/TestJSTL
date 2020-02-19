@@ -11,13 +11,13 @@
 		<%-- Mauvais exemple --%>
 		<input type="text" name="donnee" value="${ donneeSaisieParUnUtilisateur }" />
 		<%-- Bon exemple --%>
-		<input type="text" name="donnee" value="<c:out value="${ donneeSaisieParUnUtilisateur }"/>" />
+		<input type="text" name="donnee" value="<c:out value="${ donneeSaisieParUnUtilisateur }"/>" /><br>
 		
 		<%-- Cette balise met l'expression "Salut les zéros !" dans l'attribut "message" de la requête : --%>
 		<c:set var="message" value="Salut les zéros !" scope="request" />
 		<c:out value="${ message }" />
 		<%-- Affiche l'expression contenue dans la variable "message" de la requête --%>
-		<c:out value="${ requestScope.message }" />
+		<c:out value="${ requestScope.message }" /><br>
 		<%-- Et est l'équivalent du scriplet Java suivant : --%>
 		<% request.setAttribute("message", "Salut les zéros !"); %>
 		<% request.getAttribute("message"); %>

@@ -14,7 +14,7 @@
 		</c:forTokens>
 		
 		<%-- Génère une url simple, positionnée dans un lien HTML --%>
-		<a href="<c:url value="test.jsp" />">lien</a>
+		<a href="<c:url value="test00.jsp" />">lien</a>
 		<%-- Génère une url et la stocke dans la variable lien --%>
 		<c:url value="test.jsp" var="lien" /><br>
 		
